@@ -2,7 +2,7 @@
 
 Metadata for the [Medical Expenditure Panel Survey, Household Component (MEPS-HC)](https://meps.ahrq.gov/mepsweb/), built to the [PublicDataToolkit](https://github.com/AllenDowney/PublicDataToolkit) standard.
 
-**Status:** started from the PublicDataToolkit template; no records yet.
+**Status:** three data years (2022, 2023, 2024), each with two tables linked on DUPERSID: 37 variables from the full-year consolidated file (design, demographics, health status, the K6 and PHQ-2 mental-health items, use and expenditure) and the office-based visits file whole; 164 links by AHRQ's naming convention. The terms aren't decided yet, so nothing here may ship.
 
 <!-- The sections below are required, in this order (STANDARD.md §2.3; pdt check C11). Replace each placeholder. -->
 
@@ -16,7 +16,7 @@ The terms are at https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.js
 
 ## How to get the data
 
-The files are listed in [`sources.yaml`](sources.yaml), with where to get each and its checksum.
+The files are listed in [`sources.yaml`](sources.yaml), with where to get each and its checksum: AHRQ posts each file's data (Stata and other formats), codebook and documentation at meps.ahrq.gov without registration. `make download ARGS=--accept-terms` fetches them; unzip each `.dta` and run `pdftotext -layout` on each PDF into `data/interim/` before `make build`.
 
 ## How to use the metadata
 

@@ -3,30 +3,152 @@
 standard_version: "0.1"
 id: meps
 title: "Medical Expenditure Panel Survey, Household Component (MEPS-HC)"
+kind: survey
 publisher:
   name: "Agency for Healthcare Research and Quality (AHRQ)"
   url: "https://www.ahrq.gov/"
 url: "https://meps.ahrq.gov/mepsweb/"
 description: "AHRQ\u0027s survey of health care use, expenditures, sources of payment and insurance coverage of the US civilian noninstitutionalized population, from overlapping two-year panels, released as annual person-level and event-level files."
 citation: "Agency for Healthcare Research and Quality. Medical Expenditure Panel Survey, Household Component. Rockville, MD."
-# Terms are decided by a person, never by an agent or this template (STANDARD.md §8).
-# Quote what the terms pages say in `summary`, then have a person set each field
-# to ship or build-only and fill reviewed_by and reviewed_on. `unknown` blocks
-# shipping anything that depends on it.
+# Terms are decided by a person, never by an agent (STANDARD.md §8). Recorded by Claude
+# (PublicDataToolkit Task 64), 2026-11-20; `unknown` until Allen decides.
 terms:
-  url: "https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp"
-  summary: Not yet reviewed.
+  url: https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp
+  summary: 'Not yet decided. What AHRQ says (each file''s documentation, section A, "Data Use Agreement"): "Individual
+    identifiers have been removed from the micro-data contained in these files. Nevertheless, under Sections 308
+    (d) and 903 (c) of the Public Health Service Act ... data collected by [AHRQ] and/or [NCHS] may not be used
+    for any purpose other than the purpose for which they were supplied; any effort to determine the identity of
+    any reported cases is prohibited by law." Users agree: "No one is to use the data in this dataset in any way
+    except for statistical reporting and analysis"; to report and not use an identity discovered inadvertently;
+    and "No one will attempt to link this dataset with individually identifiable records from any datasets other
+    than the Medical Expenditure Panel Survey or the National Health Interview Survey", with MEPS-NHIS linkage only
+    in an AHRQ, NCHS or Census data center. "By using these data, you signify your agreement to comply ..." "The
+    AHRQ requests that users cite AHRQ and the Medical Expenditure Panel Survey as the data source." The agreement
+    says nothing about redistributing the files; the download pages have no login or click-through. The documentation
+    is a federal work.'
   data: unknown
   documentation: unknown
   metadata: unknown
   llm_processing: unknown
 dimensions:
   wave:
-    label: "year"
+    label: year
+    note: One data year per release; persons come from two overlapping panels.
+design:
+  weights:
+  - PERWT24F
+  strata: VARSTR
+  psu: VARPSU
+  note: Each release names its own year's weight.
 releases:
-  - id: "2024"
-    label: "MEPS 2024 (HC-256, HC-254G)"
-    status: current
-    sources: [meps-2024-fyc-data]
-    # A release with several data files lists `tables`, each with an id, label,
-    # sources, key and references (STANDARD.md §2.1). Examples: pdt-nsfg, pdt-fars.
+- id: '2022'
+  label: 'MEPS 2022: HC-243 (full year consolidated) and HC-239G (office-based visits)'
+  status: current
+  design:
+    weights:
+    - PERWT22F
+    strata: VARSTR
+    psu: VARPSU
+    note: The person weight for 2022, in both files; the visits file's VARSTR and VARPSU are the person's.
+  sources:
+  - meps-2022-fyc-data
+  - meps-2022-fyc-codebook
+  - meps-2022-fyc-doc
+  - meps-2022-ob-data
+  - meps-2022-ob-codebook
+  - meps-2022-ob-doc
+  tables:
+  - id: fyc
+    label: 'Persons: full year consolidated file'
+    sources:
+    - meps-2022-fyc-data
+    - meps-2022-fyc-codebook
+    - meps-2022-fyc-doc
+    key:
+    - DUPERSID
+  - id: ob
+    label: Office-based medical provider visits
+    sources:
+    - meps-2022-ob-data
+    - meps-2022-ob-codebook
+    - meps-2022-ob-doc
+    key:
+    - EVNTIDX
+    references:
+    - columns:
+      - DUPERSID
+      table: fyc
+- id: '2023'
+  label: 'MEPS 2023: HC-251 (full year consolidated) and HC-248G (office-based visits)'
+  status: current
+  design:
+    weights:
+    - PERWT23F
+    strata: VARSTR
+    psu: VARPSU
+    note: The person weight for 2023, in both files; the visits file's VARSTR and VARPSU are the person's.
+  sources:
+  - meps-2023-fyc-data
+  - meps-2023-fyc-codebook
+  - meps-2023-fyc-doc
+  - meps-2023-ob-data
+  - meps-2023-ob-codebook
+  - meps-2023-ob-doc
+  tables:
+  - id: fyc
+    label: 'Persons: full year consolidated file'
+    sources:
+    - meps-2023-fyc-data
+    - meps-2023-fyc-codebook
+    - meps-2023-fyc-doc
+    key:
+    - DUPERSID
+  - id: ob
+    label: Office-based medical provider visits
+    sources:
+    - meps-2023-ob-data
+    - meps-2023-ob-codebook
+    - meps-2023-ob-doc
+    key:
+    - EVNTIDX
+    references:
+    - columns:
+      - DUPERSID
+      table: fyc
+- id: '2024'
+  label: 'MEPS 2024: HC-256 (full year consolidated) and HC-254G (office-based visits)'
+  status: current
+  design:
+    weights:
+    - PERWT24F
+    strata: VARSTR
+    psu: VARPSU
+    note: The person weight for 2024, in both files; the visits file's VARSTR and VARPSU are the person's.
+  sources:
+  - meps-2024-fyc-data
+  - meps-2024-fyc-codebook
+  - meps-2024-fyc-doc
+  - meps-2024-ob-data
+  - meps-2024-ob-codebook
+  - meps-2024-ob-doc
+  tables:
+  - id: fyc
+    label: 'Persons: full year consolidated file'
+    sources:
+    - meps-2024-fyc-data
+    - meps-2024-fyc-codebook
+    - meps-2024-fyc-doc
+    key:
+    - DUPERSID
+  - id: ob
+    label: Office-based medical provider visits
+    sources:
+    - meps-2024-ob-data
+    - meps-2024-ob-codebook
+    - meps-2024-ob-doc
+    key:
+    - EVNTIDX
+    references:
+    - columns:
+      - DUPERSID
+      table: fyc

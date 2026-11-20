@@ -1,17 +1,270 @@
-# Every file this repo depends on (STANDARD.md §2.2): data files, codebooks,
-# questionnaires, release notes, errata and terms pages, upstream packages.
-# Schema: PublicDataToolkit/schema/sources.schema.json. Edited by hand.
-#
-# Once a file is fetched, fill fetched_on, bytes and sha256 (pdt check C6).
-# An upstream package also needs `version` (a tag or commit), and documentation
-# says which releases it `documents`.
+# Every file this repo depends on (STANDARD.md §2.2). Edited by hand.
+# redistribution is `unknown` until Allen decides the terms (dataset.yaml).
 sources:
-  - id: meps-2024-fyc-data
-    title: "MEPS 2024 (HC-256, HC-254G), data"
-    kind: data
-    format: stata
-    url: "https://meps.ahrq.gov/data_files/pufs/h256/h256dta.zip"
-    path: data/raw/CHANGE-ME
-    releases: ["2024"]
-    redistribution: unknown
-    acquisition: automated
+- id: meps-2022-fyc-data
+  title: 'MEPS HC-243: 2022 Full Year Consolidated Data File, Stata data (zip)'
+  kind: data
+  format: stata
+  url: https://meps.ahrq.gov/data_files/pufs/h243/h243dta.zip
+  path: data/raw/h243dta.zip
+  releases:
+  - '2022'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 5789896
+  sha256: 7fc534de09eff5fd81facb74d61511d322ebe8bc45af7b75441204fcaf9fb454
+  note: A zip holding the .dta; the build reads it unzipped in data/interim/.
+- id: meps-2022-fyc-codebook
+  title: 'MEPS HC-243: 2022 Full Year Consolidated Data File, codebook'
+  kind: codebook
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h243/h243cb.pdf
+  path: data/raw/h243cb.pdf
+  releases:
+  - '2022'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 3527542
+  sha256: 5084c52f799cfa1d3fc32d4d839564e70d7cf0ebf96f17c327c8d3ccf463e734
+- id: meps-2022-fyc-doc
+  title: 'MEPS HC-243: 2022 Full Year Consolidated Data File, documentation'
+  kind: other
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h243/h243doc.pdf
+  path: data/raw/h243doc.pdf
+  releases:
+  - '2022'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 1781285
+  sha256: c25a4cf6c5260e0590fa0438b6f49c39ec9371a248f268d8ce8e06dc880da290
+  note: 'The documentation: the Data Use Agreement (section A), reserved codes (section 2.2, Table 1) and the naming
+    convention (section 2.4).'
+- id: meps-2022-ob-data
+  title: 'MEPS HC-239G: 2022 Office-Based Medical Provider Visits File, Stata data (zip)'
+  kind: data
+  format: stata
+  url: https://meps.ahrq.gov/data_files/pufs/h239g/h239gdta.zip
+  path: data/raw/h239gdta.zip
+  releases:
+  - '2022'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 2823083
+  sha256: 24333211f900ac82d4ca629ad33985ba401197151b05b226f033d14f034d90b7
+  note: A zip holding the .dta; the build reads it unzipped in data/interim/.
+- id: meps-2022-ob-codebook
+  title: 'MEPS HC-239G: 2022 Office-Based Medical Provider Visits File, codebook'
+  kind: codebook
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h239g/h239gcb.pdf
+  path: data/raw/h239gcb.pdf
+  releases:
+  - '2022'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 165241
+  sha256: 691be623cd7d3baf2ef5bfee585e9ebf64fc34528eba1eecdf663dda532a51dc
+- id: meps-2022-ob-doc
+  title: 'MEPS HC-239G: 2022 Office-Based Medical Provider Visits File, documentation'
+  kind: other
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h239g/h239gdoc.pdf
+  path: data/raw/h239gdoc.pdf
+  releases:
+  - '2022'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 423647
+  sha256: 5753c7495c3111751c6c148396e7fd29f79e78d0301696845aa16e273856ba70
+  note: 'The documentation: the Data Use Agreement (section A), reserved codes (section 2.2, Table 1) and the naming
+    convention (section 2.4).'
+- id: meps-2023-fyc-data
+  title: 'MEPS HC-251: 2023 Full Year Consolidated Data File, Stata data (zip)'
+  kind: data
+  format: stata
+  url: https://meps.ahrq.gov/data_files/pufs/h251/h251dta.zip
+  path: data/raw/h251dta.zip
+  releases:
+  - '2023'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 4770908
+  sha256: 82e321f4b372043154355de3257758a89728873b171ef2d12f5efff01fb7c0b1
+  note: A zip holding the .dta; the build reads it unzipped in data/interim/.
+- id: meps-2023-fyc-codebook
+  title: 'MEPS HC-251: 2023 Full Year Consolidated Data File, codebook'
+  kind: codebook
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h251/h251cb.pdf
+  path: data/raw/h251cb.pdf
+  releases:
+  - '2023'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 3459840
+  sha256: 9545a6f7f6b49740150491d2d5f8718b07f31ce206213fd8a942ad1fd06fa847
+- id: meps-2023-fyc-doc
+  title: 'MEPS HC-251: 2023 Full Year Consolidated Data File, documentation'
+  kind: other
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h251/h251doc.pdf
+  path: data/raw/h251doc.pdf
+  releases:
+  - '2023'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 1381639
+  sha256: c96de6e7af6b2415ba1118037caaffbfc2582158b1b319ce89704ffcce0da7d5
+  note: 'The documentation: the Data Use Agreement (section A), reserved codes (section 2.2, Table 1) and the naming
+    convention (section 2.4).'
+- id: meps-2023-ob-data
+  title: 'MEPS HC-248G: 2023 Office-Based Medical Provider Visits File, Stata data (zip)'
+  kind: data
+  format: stata
+  url: https://meps.ahrq.gov/data_files/pufs/h248g/h248gdta.zip
+  path: data/raw/h248gdta.zip
+  releases:
+  - '2023'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 2421963
+  sha256: db15dd56c6a7f423a78204b72b3d4592a97d18f80c52b674c5267e770c4251eb
+  note: A zip holding the .dta; the build reads it unzipped in data/interim/.
+- id: meps-2023-ob-codebook
+  title: 'MEPS HC-248G: 2023 Office-Based Medical Provider Visits File, codebook'
+  kind: codebook
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h248g/h248gcb.pdf
+  path: data/raw/h248gcb.pdf
+  releases:
+  - '2023'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 161047
+  sha256: 760409d775b520c2db097baa2566ca65ae045ce0e5ed241eb04a46792ac2b71f
+- id: meps-2023-ob-doc
+  title: 'MEPS HC-248G: 2023 Office-Based Medical Provider Visits File, documentation'
+  kind: other
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h248g/h248gdoc.pdf
+  path: data/raw/h248gdoc.pdf
+  releases:
+  - '2023'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 409698
+  sha256: 8bd516578b402808c68eee1a5a68eb9d8f708d94c895bf775cc5e081463cc3fe
+  note: 'The documentation: the Data Use Agreement (section A), reserved codes (section 2.2, Table 1) and the naming
+    convention (section 2.4).'
+- id: meps-2024-fyc-data
+  title: 'MEPS HC-256: 2024 Full Year Consolidated Data File, Stata data (zip)'
+  kind: data
+  format: stata
+  url: https://meps.ahrq.gov/data_files/pufs/h256/h256dta.zip
+  path: data/raw/h256dta.zip
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 5803860
+  sha256: 653891861ec18574b07f576915e6f9e423263fc947610dc34e1bd176feff7b40
+  note: A zip holding the .dta; the build reads it unzipped in data/interim/.
+- id: meps-2024-fyc-codebook
+  title: 'MEPS HC-256: 2024 Full Year Consolidated Data File, codebook'
+  kind: codebook
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h256/h256cb.pdf
+  path: data/raw/h256cb.pdf
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 3905395
+  sha256: c5f0de30624e7337559f9b14a535b3b20118769e2eea074ee54103cf4f168885
+- id: meps-2024-fyc-doc
+  title: 'MEPS HC-256: 2024 Full Year Consolidated Data File, documentation'
+  kind: other
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h256/h256doc.pdf
+  path: data/raw/h256doc.pdf
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 1708629
+  sha256: 6ec7be64973abaf62dd3c0d0569a602b2d872a82d45c60dbc998daacd8075777
+  note: 'The documentation: the Data Use Agreement (section A), reserved codes (section 2.2, Table 1) and the naming
+    convention (section 2.4).'
+- id: meps-2024-ob-data
+  title: 'MEPS HC-254G: 2024 Office-Based Medical Provider Visits File, Stata data (zip)'
+  kind: data
+  format: stata
+  url: https://meps.ahrq.gov/data_files/pufs/h254g/h254gdta.zip
+  path: data/raw/h254gdta.zip
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 2681982
+  sha256: b753f4eb816ecc3bfffd71596febdf07efc0469aeb1415af89e2f5e42fb0b087
+  note: A zip holding the .dta; the build reads it unzipped in data/interim/.
+- id: meps-2024-ob-codebook
+  title: 'MEPS HC-254G: 2024 Office-Based Medical Provider Visits File, codebook'
+  kind: codebook
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h254g/h254gcb.pdf
+  path: data/raw/h254gcb.pdf
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 157253
+  sha256: d9d2c4fc3758aae456738eb224639bf5baa602aaa198daaffa39f87d69df95d7
+- id: meps-2024-ob-doc
+  title: 'MEPS HC-254G: 2024 Office-Based Medical Provider Visits File, documentation'
+  kind: other
+  format: pdf
+  url: https://meps.ahrq.gov/data_stats/download_data/pufs/h254g/h254gdoc.pdf
+  path: data/raw/h254gdoc.pdf
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 452794
+  sha256: da51c44f8f6cf2f8701a5282dac34ef70089ffc7988ba37837c56fc5d346ff51
+  note: 'The documentation: the Data Use Agreement (section A), reserved codes (section 2.2, Table 1) and the naming
+    convention (section 2.4).'
+- id: meps-hc256-page
+  title: MEPS HC-256 data file page, saved
+  kind: other
+  format: html
+  url: https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-256
+  path: data/raw/meps-hc256-detail.html
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 56789
+  sha256: 8d5d1f45e46535ae76a0805aa0521e406fb3ea0dbca7b7521f0d6ef4bdac13bc
+  note: 'The download page: no login, click-through or terms; the terms are in each file''s documentation (section
+    A).'

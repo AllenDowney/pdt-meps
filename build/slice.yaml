@@ -1,9 +1,55 @@
-# The variables to build, and facts the sources don't give (origin: hand).
-# Edited by hand; read by build/build_records.py.
-release: "2024"
-# Start with 30-50 variables that include the hard cases: a battery, an item
-# asked on only some forms, several wordings, several kinds of missing codes,
-# and anything the publisher has corrected (instructions/03-parse-documentation.md).
-variables: {}
-#  name:
-#    measure: categorical   # categorical, ordinal, continuous, count, identifier, weight, text, date
+# The releases, files and variables to build. Edited by hand; read by build/build_records.py.
+# Chosen by Claude (PublicDataToolkit Task 64), 2026-11-20.
+#
+# Each release (a data year) has two tables: the full-year consolidated file (fyc: one row per
+# person) and the office-based medical provider visits file (ob: one row per visit), linked on
+# DUPERSID. From the fyc file, the variables below; the ob file is taken whole.
+#
+# A name with {yy} stands for the year's last two digits (TOTEXP{yy} is TOTEXP24 in 2024): AHRQ's
+# naming convention (documentation section 2.4).
+author: "Claude (PublicDataToolkit Task 64)"
+date: "2026-11-20"
+releases:
+  "2022": {fyc: h243, ob: h239g, fyc_puf: HC-243, ob_puf: HC-239G}
+  "2023": {fyc: h251, ob: h248g, fyc_puf: HC-251, ob_puf: HC-248G}
+  "2024": {fyc: h256, ob: h254g, fyc_puf: HC-256, ob_puf: HC-254G}
+
+# name (template): measure (STANDARD.md §4.1), by hand.
+fyc_variables:
+  DUPERSID: identifier
+  DUID: identifier
+  PID: identifier
+  PANEL: categorical
+  VARSTR: categorical
+  VARPSU: categorical
+  PERWT{yy}F: weight
+  AGE{yy}X: continuous
+  AGELAST: continuous
+  SEX: categorical
+  RACETHX: categorical
+  REGION{yy}: categorical
+  MARRY{yy}X: categorical
+  HIDEG: ordinal
+  POVCAT{yy}: ordinal
+  FAMINC{yy}: continuous
+  INSCOV{yy}: categorical
+  EMPST53: categorical
+  RTHLTH53: ordinal
+  MNHLTH53: ordinal
+  PHYEXE53: categorical
+  HIBPDX: categorical
+  DIABDX_M18: categorical
+  ASTHDX: categorical
+  ADNERV42: ordinal
+  ADHOPE42: ordinal
+  K6SUM42: continuous
+  ADDPRS42: ordinal
+  PHQ242: continuous
+  ADPCFL42: ordinal
+  TOTEXP{yy}: continuous
+  TOTSLF{yy}: continuous
+  OBTOTV{yy}: count
+  OBVEXP{yy}: continuous
+  ERTOT{yy}: count
+  IPDIS{yy}: count
+  RXTOT{yy}: count
