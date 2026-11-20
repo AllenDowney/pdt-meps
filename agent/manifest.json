@@ -1,6 +1,6 @@
 {
  "pdt_version": "0.1.0",
- "inputs_sha256": "0f58ea4d6cf2a086fa77b1ea1b02b4def19fa9f370729a1dbba5cd7ea59a9bd2",
+ "inputs_sha256": "6cca4735a40d735dcb51d4a9245f37f11aca9b54216a2dff12f378fd1c31c7ad",
  "dataset": "meps",
  "max_tokens": 20000,
  "shards": [
@@ -258,6 +258,7 @@
    ]
   }
  ],
+ "release_shards": 12,
  "across_releases": [
   {
    "path": "variables.txt",

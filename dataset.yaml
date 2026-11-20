@@ -11,10 +11,10 @@ url: "https://meps.ahrq.gov/mepsweb/"
 description: "AHRQ\u0027s survey of health care use, expenditures, sources of payment and insurance coverage of the US civilian noninstitutionalized population, from overlapping two-year panels, released as annual person-level and event-level files."
 citation: "Agency for Healthcare Research and Quality. Medical Expenditure Panel Survey, Household Component. Rockville, MD."
 # Terms are decided by a person, never by an agent (STANDARD.md §8). Recorded by Claude
-# (PublicDataToolkit Task 64), 2026-11-20; `unknown` until Allen decides.
+# (PublicDataToolkit Task 64), 2026-11-20; Allen Downey decided them on 2026-11-20.
 terms:
   url: https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp
-  summary: 'Not yet decided. What AHRQ says (each file''s documentation, section A, "Data Use Agreement"): "Individual
+  summary: 'What AHRQ says (each file''s documentation, section A, "Data Use Agreement"): "Individual
     identifiers have been removed from the micro-data contained in these files. Nevertheless, under Sections 308
     (d) and 903 (c) of the Public Health Service Act ... data collected by [AHRQ] and/or [NCHS] may not be used
     for any purpose other than the purpose for which they were supplied; any effort to determine the identity of
@@ -26,10 +26,13 @@ terms:
     AHRQ requests that users cite AHRQ and the Medical Expenditure Panel Survey as the data source." The agreement
     says nothing about redistributing the files; the download pages have no login or click-through. The documentation
     is a federal work.'
-  data: unknown
-  documentation: unknown
-  metadata: unknown
-  llm_processing: unknown
+  data: ship
+  documentation: ship
+  metadata: ship
+  llm_processing: allowed
+  reviewed_by: Allen Downey
+  reviewed_on: '2026-11-20'
+  notice: "Source: Agency for Healthcare Research and Quality, Medical Expenditure Panel Survey, Household Component, public use files. Use is subject to AHRQ's Data Use Agreement: the data may be used only for statistical reporting and analysis, and users must not attempt to identify any person or link the data to identifiable records."
 dimensions:
   wave:
     label: year

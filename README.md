@@ -2,7 +2,7 @@
 
 Metadata for the [Medical Expenditure Panel Survey, Household Component (MEPS-HC)](https://meps.ahrq.gov/mepsweb/), built to the [PublicDataToolkit](https://github.com/AllenDowney/PublicDataToolkit) standard.
 
-**Status:** three data years (2022, 2023, 2024), each with two tables linked on DUPERSID: 37 variables from the full-year consolidated file (design, demographics, health status, the K6 and PHQ-2 mental-health items, use and expenditure) and the office-based visits file whole; 164 links by AHRQ's naming convention. The terms aren't decided yet, so nothing here may ship.
+**Status:** three data years (2022, 2023, 2024), each with two tables linked on DUPERSID: 37 variables from the full-year consolidated file (design, demographics, health status, the K6 and PHQ-2 mental-health items, use and expenditure) and the office-based visits file whole; 164 links by AHRQ's naming convention. The terms are decided (everything ships), but nothing is published yet.
 
 <!-- The sections below are required, in this order (STANDARD.md §2.3; pdt check C11). Replace each placeholder. -->
 
@@ -12,7 +12,9 @@ AHRQ's survey of health care use, expenditures, sources of payment and insurance
 
 ## Terms of use
 
-The terms are at https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp. They haven't been reviewed yet, so nothing built from this repo may ship (STANDARD.md §8). Once a person has decided them, summarize them here; the decision is in [`dataset.yaml`](dataset.yaml).
+The terms are at https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp. Allen Downey reviewed the terms on 2026-11-20: the metadata, the documentation and the common-format data ship, with this notice:
+
+> Source: Agency for Healthcare Research and Quality, Medical Expenditure Panel Survey, Household Component, public use files. Use is subject to AHRQ's Data Use Agreement: the data may be used only for statistical reporting and analysis, and users must not attempt to identify any person or link the data to identifiable records.
 
 ## How to get the data
 
