@@ -1,0 +1,17 @@
+# Every file this repo depends on (STANDARD.md §2.2): data files, codebooks,
+# questionnaires, release notes, errata and terms pages, upstream packages.
+# Schema: PublicDataToolkit/schema/sources.schema.json. Edited by hand.
+#
+# Once a file is fetched, fill fetched_on, bytes and sha256 (pdt check C6).
+# An upstream package also needs `version` (a tag or commit), and documentation
+# says which releases it `documents`.
+sources:
+  - id: meps-2024-fyc-data
+    title: "MEPS 2024 (HC-256, HC-254G), data"
+    kind: data
+    format: stata
+    url: "https://meps.ahrq.gov/data_files/pufs/h256/h256dta.zip"
+    path: data/raw/CHANGE-ME
+    releases: ["2024"]
+    redistribution: unknown
+    acquisition: automated

@@ -1,0 +1,23 @@
+# Changes here will be overwritten by Copier; do not edit by hand.
+_commit: v0.1.0
+_src_path: /home/downey/PublicDataToolkit
+citation: Agency for Healthcare Research and Quality. Medical Expenditure Panel Survey,
+    Household Component. Rockville, MD.
+dataset_id: meps
+dataset_url: https://meps.ahrq.gov/mepsweb/
+description: AHRQ's survey of health care use, expenditures, sources of payment and
+    insurance coverage of the US civilian noninstitutionalized population, from overlapping
+    two-year panels, released as annual person-level and event-level files.
+form_label: ''
+publisher_name: Agency for Healthcare Research and Quality (AHRQ)
+publisher_url: https://www.ahrq.gov/
+release_id: '2024'
+release_label: MEPS 2024 (HC-256, HC-254G)
+source_format: stata
+source_id: meps-2024-fyc-data
+source_kind: data
+source_url: https://meps.ahrq.gov/data_files/pufs/h256/h256dta.zip
+standard_version: '0.1'
+terms_url: https://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp
+title: Medical Expenditure Panel Survey, Household Component (MEPS-HC)
+wave_label: year
