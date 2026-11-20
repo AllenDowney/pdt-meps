@@ -1,0 +1,268 @@
+{
+ "pdt_version": "0.1.0",
+ "inputs_sha256": "0f58ea4d6cf2a086fa77b1ea1b02b4def19fa9f370729a1dbba5cd7ea59a9bd2",
+ "dataset": "meps",
+ "max_tokens": 20000,
+ "shards": [
+  {
+   "kind": "table",
+   "title": "Release 2022, table fyc",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2022/fyc/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2022",
+    "table": "fyc"
+   },
+   "releases": [
+    "2022"
+   ],
+   "n_in_scope": 37,
+   "rule_versions": {},
+   "notes": [],
+   "count": 37,
+   "files": [
+    {
+     "path": "shards/table/2022-fyc.jsonl",
+     "form": "jsonl",
+     "variables": 37,
+     "tokens": 6997
+    },
+    {
+     "path": "shards/table/2022-fyc.txt",
+     "form": "txt",
+     "variables": 37,
+     "tokens": 725
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2022, table ob",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2022/ob/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2022",
+    "table": "ob"
+   },
+   "releases": [
+    "2022"
+   ],
+   "n_in_scope": 46,
+   "rule_versions": {},
+   "notes": [],
+   "count": 46,
+   "files": [
+    {
+     "path": "shards/table/2022-ob.jsonl",
+     "form": "jsonl",
+     "variables": 46,
+     "tokens": 9102
+    },
+    {
+     "path": "shards/table/2022-ob.txt",
+     "form": "txt",
+     "variables": 46,
+     "tokens": 864
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2023, table fyc",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2023/fyc/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2023",
+    "table": "fyc"
+   },
+   "releases": [
+    "2023"
+   ],
+   "n_in_scope": 37,
+   "rule_versions": {},
+   "notes": [],
+   "count": 37,
+   "files": [
+    {
+     "path": "shards/table/2023-fyc.jsonl",
+     "form": "jsonl",
+     "variables": 37,
+     "tokens": 6709
+    },
+    {
+     "path": "shards/table/2023-fyc.txt",
+     "form": "txt",
+     "variables": 37,
+     "tokens": 721
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2023, table ob",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2023/ob/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2023",
+    "table": "ob"
+   },
+   "releases": [
+    "2023"
+   ],
+   "n_in_scope": 45,
+   "rule_versions": {},
+   "notes": [],
+   "count": 45,
+   "files": [
+    {
+     "path": "shards/table/2023-ob.jsonl",
+     "form": "jsonl",
+     "variables": 45,
+     "tokens": 8516
+    },
+    {
+     "path": "shards/table/2023-ob.txt",
+     "form": "txt",
+     "variables": 45,
+     "tokens": 847
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2024, table fyc",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2024/fyc/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2024",
+    "table": "fyc"
+   },
+   "releases": [
+    "2024"
+   ],
+   "n_in_scope": 37,
+   "rule_versions": {},
+   "notes": [],
+   "count": 37,
+   "files": [
+    {
+     "path": "shards/table/2024-fyc.jsonl",
+     "form": "jsonl",
+     "variables": 37,
+     "tokens": 6672
+    },
+    {
+     "path": "shards/table/2024-fyc.txt",
+     "form": "txt",
+     "variables": 37,
+     "tokens": 721
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2024, table ob",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2024/ob/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2024",
+    "table": "ob"
+   },
+   "releases": [
+    "2024"
+   ],
+   "n_in_scope": 45,
+   "rule_versions": {},
+   "notes": [],
+   "count": 45,
+   "files": [
+    {
+     "path": "shards/table/2024-ob.jsonl",
+     "form": "jsonl",
+     "variables": 45,
+     "tokens": 8524
+    },
+    {
+     "path": "shards/table/2024-ob.txt",
+     "form": "txt",
+     "variables": 45,
+     "tokens": 847
+    }
+   ]
+  },
+  {
+   "kind": "scale",
+   "title": "Scale signature: yes_no",
+   "basis": "variables with this scale signature in the current release (2022, 2023, 2024)",
+   "full_records": [
+    "metadata/releases/2022/fyc/variables.jsonl",
+    "metadata/releases/2022/ob/variables.jsonl",
+    "metadata/releases/2023/fyc/variables.jsonl",
+    "metadata/releases/2023/ob/variables.jsonl",
+    "metadata/releases/2024/fyc/variables.jsonl",
+    "metadata/releases/2024/ob/variables.jsonl"
+   ],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": [
+     "2022",
+     "2023",
+     "2024"
+    ],
+    "derived": {
+     "scale_signature": "yes_no"
+    }
+   },
+   "releases": [
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "n_in_scope": 247,
+   "rule_versions": {
+    "scale_signature_from_valid_labels": "0.2"
+   },
+   "notes": [],
+   "count": 30,
+   "files": [
+    {
+     "path": "shards/scale/yes-no.jsonl",
+     "form": "jsonl",
+     "variables": 30,
+     "tokens": 7050
+    },
+    {
+     "path": "shards/scale/yes-no.txt",
+     "form": "txt",
+     "variables": 30,
+     "tokens": 698
+    }
+   ]
+  }
+ ],
+ "across_releases": [
+  {
+   "path": "variables.txt",
+   "variables": 83,
+   "tokens": 1866
+  }
+ ]
+}

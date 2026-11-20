@@ -1,0 +1,50 @@
+{
+ "pdt_version": "0.1.0",
+ "inputs_sha256": "0f58ea4d6cf2a086fa77b1ea1b02b4def19fa9f370729a1dbba5cd7ea59a9bd2",
+ "dataset": "meps",
+ "spec": "0.1.0",
+ "files": [
+  "2022.yaml",
+  "2023.yaml",
+  "2024.yaml",
+  "LOSSES.md"
+ ],
+ "losses": {
+  "2022": {
+   "release_version": 1,
+   "variables": 83,
+   "untyped": 17,
+   "availability": 83,
+   "provenance_fields": 286,
+   "numeric_code_labels": 59,
+   "open_ranges": 3,
+   "missing_codes": 78,
+   "links": 164,
+   "derived": 30
+  },
+  "2023": {
+   "release_version": 1,
+   "variables": 82,
+   "untyped": 17,
+   "availability": 82,
+   "provenance_fields": 283,
+   "numeric_code_labels": 59,
+   "open_ranges": 3,
+   "missing_codes": 76,
+   "links": 164,
+   "derived": 30
+  },
+  "2024": {
+   "release_version": 1,
+   "variables": 82,
+   "untyped": 17,
+   "availability": 82,
+   "provenance_fields": 283,
+   "numeric_code_labels": 59,
+   "open_ranges": 3,
+   "missing_codes": 75,
+   "links": 164,
+   "derived": 30
+  }
+ }
+}
