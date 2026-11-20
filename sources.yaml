@@ -9,7 +9,7 @@ sources:
   path: data/raw/h243dta.zip
   releases:
   - '2022'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 5789896
@@ -23,7 +23,7 @@ sources:
   path: data/raw/h243cb.pdf
   releases:
   - '2022'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 3527542
@@ -36,7 +36,7 @@ sources:
   path: data/raw/h243doc.pdf
   releases:
   - '2022'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 1781285
@@ -51,7 +51,7 @@ sources:
   path: data/raw/h239gdta.zip
   releases:
   - '2022'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 2823083
@@ -65,7 +65,7 @@ sources:
   path: data/raw/h239gcb.pdf
   releases:
   - '2022'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 165241
@@ -78,7 +78,7 @@ sources:
   path: data/raw/h239gdoc.pdf
   releases:
   - '2022'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 423647
@@ -93,7 +93,7 @@ sources:
   path: data/raw/h251dta.zip
   releases:
   - '2023'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 4770908
@@ -107,7 +107,7 @@ sources:
   path: data/raw/h251cb.pdf
   releases:
   - '2023'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 3459840
@@ -120,7 +120,7 @@ sources:
   path: data/raw/h251doc.pdf
   releases:
   - '2023'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 1381639
@@ -135,7 +135,7 @@ sources:
   path: data/raw/h248gdta.zip
   releases:
   - '2023'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 2421963
@@ -149,7 +149,7 @@ sources:
   path: data/raw/h248gcb.pdf
   releases:
   - '2023'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 161047
@@ -162,7 +162,7 @@ sources:
   path: data/raw/h248gdoc.pdf
   releases:
   - '2023'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 409698
@@ -177,7 +177,7 @@ sources:
   path: data/raw/h256dta.zip
   releases:
   - '2024'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 5803860
@@ -191,7 +191,7 @@ sources:
   path: data/raw/h256cb.pdf
   releases:
   - '2024'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 3905395
@@ -204,7 +204,7 @@ sources:
   path: data/raw/h256doc.pdf
   releases:
   - '2024'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 1708629
@@ -219,7 +219,7 @@ sources:
   path: data/raw/h254gdta.zip
   releases:
   - '2024'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 2681982
@@ -233,7 +233,7 @@ sources:
   path: data/raw/h254gcb.pdf
   releases:
   - '2024'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 157253
@@ -246,7 +246,7 @@ sources:
   path: data/raw/h254gdoc.pdf
   releases:
   - '2024'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 452794
@@ -261,7 +261,7 @@ sources:
   path: data/raw/meps-hc256-detail.html
   releases:
   - '2024'
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 56789
